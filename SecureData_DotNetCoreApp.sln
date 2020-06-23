@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureData", "SecureData\SecureData.csproj", "{2A0CB499-E4DF-406D-9C67-60AE7B6C6A9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A0CB499-E4DF-406D-9C67-60AE7B6C6A9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A0CB499-E4DF-406D-9C67-60AE7B6C6A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A0CB499-E4DF-406D-9C67-60AE7B6C6A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A0CB499-E4DF-406D-9C67-60AE7B6C6A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F78C7AC8-8B99-43E8-AB4A-3593639C6515}
+	EndGlobalSection
+EndGlobal

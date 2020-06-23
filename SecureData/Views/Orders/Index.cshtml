@@ -1,0 +1,59 @@
+﻿@model List<Order>
+
+@{
+    Layout = "_Layout";
+}
+
+
+@using (Html.BeginForm("Post", "Orders", FormMethod.Post))
+{
+    <h1>Orders</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ElementAt(0).number)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ElementAt(0).date)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ElementAt(0).company)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ElementAt(0).amount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ElementAt(0).paid)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count(); i++)
+            {
+                <tr>
+                    <td>
+                        @Html.TextBoxFor(modelItem => Model[i].number, new { @readonly = "readonly" })
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(modelItem => Model[i].date, new { @readonly = "readonly" })
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(modelItem => Model[i].company, new { @readonly = "readonly" })
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(modelItem => Model[i].amount, new { @readonly = "readonly" })
+                    </td>
+                    <td>
+                        @Html.CheckBoxFor(modelItem => Model[i].paid)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <input type="submit" value="Submit" />
+}
+
